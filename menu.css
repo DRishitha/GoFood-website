@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --primary-color: #fc7f09;
+    --primary-color-light: #fffcfa;
+    --primary-color-dark: #db6e09;
+    --text-dark: #18181b;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu_header{
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.heading {
+    color: black;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.btn {
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: var(--white);
+    background-color:  rgb(239, 79, 95);
+    border: rgb(239, 79, 95);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:  #ef3605;
+}
+
+.special__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.special__card {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: .3s;
+}
+
+.special__card:hover {
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+ 
+.special__card .img {
+    mix-blend-mode: multiply;
+    background-blend-mode: multiply;
+    filter: none;
+}
+.special__card img {
+    max-width: 210px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.6));
+}
+
+
+.special__card h4 {
+    margin-bottom: .6rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.special__card p {
+    margin-bottom: 0.6rem;
+    color: var(--text-light);
+    line-height: 1.8rem;
+}
+.special__ratings {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.special__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.special__footer .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+
+@media (width > 540px) {
+    .special__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 768px){
+    
+    .special__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+    
+
+@media (width > 1024px) {
+    .special__grid {
+        gap: 2rem;
+    }
+
+    .special__card {
+        padding: 2rem;
+        border-radius: 3rem;
+    }
+}
