@@ -9,18 +9,36 @@
     position: relative;
 }
 h1{
-    padding: 20px;
+    padding-top: 40px;
     text-align: center;
 }
 
-img.ig{
-    height: 220px;
+.img{
+    width: 80%;
+    margin: 60px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    grid-gap: 23px;
+}
+
+.img2{
+    width: 80%;
+    margin: 60px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    grid-gap: 23px;
 }
 
 img{
-    height: 220px;
+    height: 200px;
     width: 250px;
     display: inline;
+    cursor: pointer
 }
 
+img:hover{
+    transform: scale(0.9) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
 
