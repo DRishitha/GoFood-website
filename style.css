@@ -83,6 +83,17 @@ body {
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.logo a{
+     font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo a span {
+    color: var(--text-dark);
+}
+
 nav {
     position: fixed;
     isolation: isolate;
